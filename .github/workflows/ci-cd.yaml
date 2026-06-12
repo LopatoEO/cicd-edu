@@ -67,7 +67,7 @@ jobs:
 
   deploy:
     needs: build
-    runs-on: self-hosted   # 👈 Orange Pi / homelab runner
+    runs-on: self-hosted
 
     steps:
       - name: Pull latest image
