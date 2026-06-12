@@ -28,7 +28,6 @@ exclude = [
 
 [tool.poetry]
 package-mode = false
-packages = [{ include = "src" }]
 
 [tool.bandit]
 exclude_dirs = ["tests"]
@@ -62,6 +61,7 @@ test = ["pytest>=8.0"]
 minversion = "8.0"
 testpaths = ["tests"]
 python_files = ["test_*.py"]
+pythonpath = ["."]
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
