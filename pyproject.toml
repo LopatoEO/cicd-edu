@@ -25,8 +25,10 @@ exclude = [
     "dist",
 ]
 
-[tool.bandit]
+[tool.poetry]
+package-mode = false
 
+[tool.bandit]
 exclude_dirs = ["tests"]
 
 [tool.ruff.lint]
