@@ -28,6 +28,7 @@ exclude = [
 
 [tool.poetry]
 package-mode = false
+packages = [{ include = "src" }]
 
 [tool.bandit]
 exclude_dirs = ["tests"]
