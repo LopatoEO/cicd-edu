@@ -11,6 +11,41 @@ dependencies = [
     "uvicorn (>=0.49.0,<0.50.0)"
 ]
 
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+include = ["*.py", "*.pyi"]
+
+exclude = [
+    ".git",
+    ".venv",
+    "__pycache__",
+    "build",
+    "dist",
+]
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "F",   # pyflakes
+    "I",   # imports (isort)
+    "B",   # bugbears
+    "W",   # warnings
+    "UP",  # pyupgrade
+]
+
+ignore = [
+    "E501",  
+]
+
+
+fixable = ["ALL"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "lf"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
