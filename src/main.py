@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-app = FastAPI(title='FastAPI application for demonstration purposes fhdskfjbsdjkfbjksdbfjsbdjfbdjsbfljsbdfjbsdjkfbjksdbfjbdsfjbdjlbfkjsbdflbsdkbfjlbfjbsdfljbsdkfb jdsbfosdbfmdsbfjsbdfosdhbf')
+app = FastAPI(title='FastAPI application for demonstration purposes')
 
 @app.get("/")
 async def root():
