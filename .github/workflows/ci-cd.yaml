@@ -71,7 +71,7 @@ jobs:
     steps:
       - name: Pull latest image
         run: |
-          docker pull ghcr.io/${{ github.repository }}:latest
+          docker pull ghcr.io/lopatoeo/cicd-edu:latest
 
       - name: Stop old container
         run: |
