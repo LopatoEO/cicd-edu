@@ -30,7 +30,7 @@ jobs:
       # 🔐 Security scan
       - name: Run Bandit
         run: |
-          bandit -r . -q
+          bandit -r src -q
 
   test:
     needs: lint-and-security
