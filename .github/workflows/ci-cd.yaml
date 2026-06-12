@@ -61,9 +61,8 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io/${{ github.repository }}:latest
-            ghcr.io/${{ github.repository }}:${{ github.sha }}
-
+            ghcr.io/lopatoeo/cicd-edu:latest
+            ghcr.io/lopatoeo/cicd-edu:${{ github.sha }}
 
   deploy:
     needs: build
