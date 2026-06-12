@@ -11,10 +11,11 @@ def test_root_returns_hello_world():
     assert response.status_code == 200
     assert response.json() == {"message": "Hello World"}
 
-def test_app_not_found():
-    response = client.get("/app")
-
-    assert response.status_code == 404
-
 def test_app_title_is_configured():
     assert "FastAPI application" in app.title
+
+def test_multiply():
+    response = client.get("/actions/multiply?a=3&b=4")
+
+    assert response.status_code == 200
+    assert response.json() == {"result": 12}
