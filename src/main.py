@@ -1,6 +1,7 @@
+
 from fastapi import FastAPI
-from prometheus_fastapi_instrumentator import Instrumentator
 from prometheus_client import Counter
+from prometheus_fastapi_instrumentator import Instrumentator
 
 app = FastAPI(title='FastAPI application for demonstration purposes')
 
